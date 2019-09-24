@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/gin_and_tonic_glas_background"/>
+    <foreground android:drawable="@mipmap/gin_and_tonic_glas_foreground"/>
+</adaptive-icon>

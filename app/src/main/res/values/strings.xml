@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TJ Media - Pose List</string>
+    <string name="world_domination">World Domination</string>
+    <string name="picture_of_the_pose">Picture of the pose</string>
+    <string name="v_up_title">The V Up</string>
+    <string name="v_up_text">This is your most classic, basic wedding pose.\nBe sure to have your couple touching at the hips with hands anywhere but dangling at the bride and groom’s sides.</string>
+    <string name="opened_up_text">From the most basic wedding pose, the V Up, you can have your couple simply open up their feet towards the camera and you have the “Opened Up” pose.</string>
+    <string name="closed_up_text">The most common wedding pose is what we call the “Closed Up” pose. We call it this because their bodies are closed off and they are facing each other.\nFrom here, you can get intimate poses and candid poses depending on where you have the bride and groom look and depending on their expression.</string>
+    <string name="stacked">The “stacked” wedding pose is great for those romantic photos where it looks like the wedding couple is gazing off into the distance.\nWe use this pose often with grand, scenic landscape wedding photographs.</string>
+    <string name="the_swing_text">The Swing pose adds in action into a scene. Use this selectively and be sure to gauge your groom’s ability to hold up the bride’s weight.</string>
+    <string name="the_carry_text">Like the Swing, the next pose, “the carry,” adds some interesting action and motion to a scene. It’s a bit more traditional than the “swing” and might require a little more strength from the groom.</string>
+    <string name="the_staggered_couple_text">“The Staggered Couple” is sometimes overused in today’s wedding photography, but it can add some much-needed variation to your posing. With this pose, you can put the focus on just one of the two.</string>
+    <string name="meet_in_middle_text">The “Meet in the Middle” is a cute pose. We also call it the penguin kiss because of the way the couples have to stick out their rear ends. This is great for symmetrical scenes like the ones below.</string>
+    <string name="the_walk_text">The walk is probably the most common pose. Wedding videographers love this pose and often default to this because of the motion it adds to the scene.</string>
+    <string name="the_dip_text">The dip is like “The Swing” and “The Carry” in that they are dynamic poses with motion. Again, gauge the couples’ coordination and ability to execute this pose. It’s more difficult than it looks and it can look really odd and awkward if done incorrectly. The most common mistake when doing this wedding pose is the groom not lunging far enough down. We want it to look more like a lunge and less like a squat.</string>
+</resources>
