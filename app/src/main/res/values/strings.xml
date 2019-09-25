@@ -13,4 +13,8 @@
     <string name="meet_in_middle_text">The “Meet in the Middle” is a cute pose. We also call it the penguin kiss because of the way the couples have to stick out their rear ends. This is great for symmetrical scenes like the ones below.</string>
     <string name="the_walk_text">The walk is probably the most common pose. Wedding videographers love this pose and often default to this because of the motion it adds to the scene.</string>
     <string name="the_dip_text">The dip is like “The Swing” and “The Carry” in that they are dynamic poses with motion. Again, gauge the couples’ coordination and ability to execute this pose. It’s more difficult than it looks and it can look really odd and awkward if done incorrectly. The most common mistake when doing this wedding pose is the groom not lunging far enough down. We want it to look more like a lunge and less like a squat.</string>
+    <string name="couple_poses">Couple Poses</string>
+    <string name="bride_poses">Bride Poses</string>
+    <string name="groom_poses">Groom Poses</string>
+    <string name="gallery">Gallery</string>
 </resources>

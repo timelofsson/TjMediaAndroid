@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/action_couple"
+            android:enabled="true"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/couple_poses"/>
+        <item
+            android:id="@+id/action_bride"
+            android:enabled="true"
+            android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
+            android:title="@string/bride_poses"/>
+        <item
+            android:id="@+id/action_groom"
+            android:enabled="true"
+            android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+            android:title="@string/groom_poses" />
+        <item
+            android:id="@+id/action_gallery"
+            android:enabled="true"
+            android:icon="@drawable/ic_camera_black_24dp"
+            android:title="@string/gallery" />
+</menu>

@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PoseActivity" />
+        <activity android:name=".GalleryActivity"></activity>
+        <activity android:name=".CouplesPoseActivity"></activity>
     </application>
 
 </manifest>

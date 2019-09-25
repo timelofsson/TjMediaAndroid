@@ -2,7 +2,6 @@ package com.example.myapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -10,16 +9,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapp.adapter.PoseAdapter
 import com.example.myapp.models.Pose
 import kotlinx.android.synthetic.main.activity_main.*
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 
 
-
-
-
-
-class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
+class CouplesPoseActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
     private val poses: ArrayList<Pose> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,25 +36,6 @@ class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
 
         // Access the RecyclerView Adapter and load the data into it
         rv_main_list.adapter = PoseAdapter(poses, this, this, resources)
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(object :
-            BottomNavigationView.OnNavigationItemSelectedListener {
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {
-                when (item.itemId) {
-                    R.id.action_couple ->
-                        // do something here
-                        return true
-                    R.id.action_bride ->
-                        // do something here
-                        return true
-                    R.id.action_groom ->
-                        // do something here
-                        return true
-                    else -> return true
-                }
-            }
-        })
     }
 
     override fun onPoseClick(position: Int) {
@@ -69,7 +44,6 @@ class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
 
         startActivity(intent)
     }
-
 
 
     // Adds animals to the empty animals ArrayList
