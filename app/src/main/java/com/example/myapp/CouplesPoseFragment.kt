@@ -2,44 +2,40 @@ package com.example.myapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapp.adapter.PoseAdapter
 import com.example.myapp.models.Pose
-import kotlinx.android.synthetic.main.activity_main.*
 
-
-
-
-class CouplesPoseActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
+class CouplesPoseFragment : Fragment(), PoseAdapter.OnPoseListener{
     private val poses: ArrayList<Pose> = ArrayList()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
-        // Find the toolbar view inside the activity layout
-        val toolbar = findViewById<View>(R.id.my_toolbar) as Toolbar
-        toolbar.setTitleTextColor(resources.getColor(R.color.colorAccent, this.theme))
-        // Sets the Toolbar to act as the ActionBar for this Activity window.
-        // Make sure the toolbar exists in the activity and is not null
-        setSupportActionBar(toolbar)
+        val rootView = inflater.inflate(R.layout.couple_poses_fragment, container, false)
 
-        supportActionBar?.setIcon(R.mipmap.tjmedia)
+        val recyclerView = rootView.findViewById<RecyclerView>(R.id.rv_main_list)
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        if(poses.size <= 0){
+            addPoses()
+        }
+        recyclerView.adapter = PoseAdapter(poses, this.context!!, this, resources)
+        recyclerView.itemAnimator = DefaultItemAnimator()
 
-        addPoses()
-
-        // Creates a vertical Layout Manager
-        rv_main_list.layoutManager = LinearLayoutManager(this)
-
-        // Access the RecyclerView Adapter and load the data into it
-        rv_main_list.adapter = PoseAdapter(poses, this, this, resources)
+        return rootView
     }
 
     override fun onPoseClick(position: Int) {
-        val intent = Intent(this, PoseActivity::class.java)
+        val intent = Intent(activity, PoseActivity::class.java)
         intent.putExtra("pose", poses[position])
 
         startActivity(intent)

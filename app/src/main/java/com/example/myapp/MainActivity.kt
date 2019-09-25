@@ -6,21 +6,16 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
 import com.example.myapp.adapter.PoseAdapter
 import com.example.myapp.models.Pose
-import kotlinx.android.synthetic.main.activity_main.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
-
-
-
-
-
-
 
 class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
     private val poses: ArrayList<Pose> = ArrayList()
+
+    val couplesFragment = CouplesPoseFragment()
+    val galleryFragment = GalleryActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,30 +30,34 @@ class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
 
         supportActionBar?.setIcon(R.mipmap.tjmedia)
 
-        addPoses()
+        //Add basic poses
+//        supportFragmentManager
+//            .beginTransaction()
+//            .replace(R.id.main_fragment, couplesFragment, couplesFragment::class.java.simpleName)
+//            .commit()
 
-        // Creates a vertical Layout Manager
-        rv_main_list.layoutManager = LinearLayoutManager(this)
-
-        // Access the RecyclerView Adapter and load the data into it
-        rv_main_list.adapter = PoseAdapter(poses, this, this, resources)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNavigationView.setOnNavigationItemSelectedListener(object :
             BottomNavigationView.OnNavigationItemSelectedListener {
             override fun onNavigationItemSelected(item: MenuItem): Boolean {
+                var activeFragment: Fragment
                 when (item.itemId) {
                     R.id.action_couple ->
+                        activeFragment = couplesFragment
+                    R.id.action_detail ->
                         // do something here
                         return true
-                    R.id.action_bride ->
-                        // do something here
-                        return true
-                    R.id.action_groom ->
-                        // do something here
-                        return true
+                    R.id.action_gallery -> {
+                       activeFragment = galleryFragment
+                    }
                     else -> return true
                 }
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_fragment, activeFragment, activeFragment::class.java.simpleName)
+                    .commit()
+                return true
             }
         })
     }

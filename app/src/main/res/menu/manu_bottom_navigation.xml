@@ -6,15 +6,10 @@
             android:icon="@drawable/ic_people_black_24dp"
             android:title="@string/couple_poses"/>
         <item
-            android:id="@+id/action_bride"
+            android:id="@+id/action_detail"
             android:enabled="true"
             android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
-            android:title="@string/bride_poses"/>
-        <item
-            android:id="@+id/action_groom"
-            android:enabled="true"
-            android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
-            android:title="@string/groom_poses" />
+            android:title="@string/detail_shots"/>
         <item
             android:id="@+id/action_gallery"
             android:enabled="true"
