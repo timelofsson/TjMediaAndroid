@@ -24,4 +24,20 @@
     <string name="twirl_pose_text">Ask the groom to just twirl the bride around\nMakes it easy for real emotions\nImportant to keep shooting after because a lot of reaction can happen there.</string>
     <string name="waling_pose_title">Walking shot</string>
     <string name="waling_pose_text">Look into camera\nLook at each other\nLook at something on the side</string>
+    <string name="detail_shoes_title">Shoes</string>
+    <string name="detail_shoes_text">Important to take pictures of the bridal shoes</string>
+    <string name="detail_rings_title">Rings</string>
+    <string name="detail_rings_text">Important to take pictures of the bridal shoes</string>
+    <string name="detail_veil_title">Veil</string>
+    <string name="detail_veil_text">Here you can be creative, see below for inspiration</string>
+    <string name="detail_bouquet_title">Bouquet</string>
+    <string name="detail_bouquet_text">Be creative, see below for inspiration</string>
+    <string name="detail_invitation_title">Invitation / Programs</string>
+    <string name="detail_invitation_text">Be creative, see below for inspiration</string>
+    <string name="detail_cufflings_title">Cufflings</string>
+    <string name="detail_cufflings_text">Be creative, see below for inspiration</string>
+    <string name="detail_cake_title">Cake</string>
+    <string name="detail_cake_text">Be creative, see below for inspiration</string>
+    <string name="detail_venue_title">Venue</string>
+    <string name="detail_venue_text">Be creative, see below for inspiration</string>
 </resources>

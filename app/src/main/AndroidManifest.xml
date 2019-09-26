@@ -19,8 +19,8 @@
         </activity>
         <activity android:name=".PoseActivity" />
         <activity android:name=".GalleryActivity"></activity>
-        <activity android:name=".CouplesPoseFragment"></activity>
-        <activity android:name=".PoseWithMultiplePicturesActivity"></activity>
+        <activity android:name=".DetailShotsFragment"></activity>
+        <activity android:name=".PoseActivity"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>
