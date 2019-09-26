@@ -44,6 +44,17 @@ class OtherFragment : Fragment() , PoseWithMultiplePictureAdapter.OnPoseListener
 
     // Adds animals to the empty animals ArrayList
     fun addPoses() {
+
+
+        poses.add(
+            PoseWithMultiplePictures(
+                resources.getString(R.string.hipster_pose_title),
+                resources.getString(R.string.hipster_pose_text),
+                R.mipmap.hipster_pose,
+                intArrayOf(R.drawable.hipster_pose, R.drawable.hipster_pose_variation, R.drawable.hipster_pose_variation_2, R.drawable.opened_up)
+            )
+        )
+
         poses.add(
             PoseWithMultiplePictures(
                 resources.getString(R.string.intimate_pose_title),
@@ -55,19 +66,19 @@ class OtherFragment : Fragment() , PoseWithMultiplePictureAdapter.OnPoseListener
 
         poses.add(
             PoseWithMultiplePictures(
-                resources.getString(R.string.hipster_pose_title),
-                resources.getString(R.string.hipster_pose_text),
-                R.mipmap.hipster_pose,
-                intArrayOf(R.drawable.hipster_pose, R.drawable.hipster_pose_variation, R.drawable.hipster_pose_variation_2)
+                resources.getString(R.string.twirl_pose_title),
+                resources.getString(R.string.twirl_pose_text),
+                R.mipmap.the_twirl,
+                intArrayOf(R.drawable.the_twirl)
             )
         )
 
         poses.add(
             PoseWithMultiplePictures(
-                resources.getString(R.string.twirl_pose_title),
-                resources.getString(R.string.twirl_pose_text),
-                R.mipmap.the_twirl,
-                intArrayOf(R.drawable.the_twirl)
+                resources.getString(R.string.waling_pose_title),
+                resources.getString(R.string.waling_pose_text),
+                R.mipmap.walk,
+                intArrayOf(R.drawable.the_walk, R.drawable.waling_shot)
             )
         )
     }

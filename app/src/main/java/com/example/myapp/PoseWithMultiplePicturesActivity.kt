@@ -9,7 +9,6 @@ import com.example.myapp.service.BitMapService
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.pose_main.pose_fragment
 import kotlinx.android.synthetic.main.pose_main.view.text
-import kotlinx.android.synthetic.main.pose_multiple_picture_main.*
 
 
 class PoseWithMultiplePicturesActivity : AppCompatActivity() {
