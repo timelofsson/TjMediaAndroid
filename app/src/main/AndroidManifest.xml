@@ -20,8 +20,8 @@
         <activity android:name=".PoseActivity" />
         <activity android:name=".GalleryActivity"></activity>
         <activity android:name=".CouplesPoseFragment"></activity>
+        <activity android:name=".PoseWithMultiplePicturesActivity"></activity>
     </application>
 
-    ///permissions
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

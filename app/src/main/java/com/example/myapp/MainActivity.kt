@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
 
     val couplesFragment = CouplesPoseFragment()
     val galleryFragment = GalleryActivity()
+    val otherFragment = OtherFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,23 +32,22 @@ class MainActivity : AppCompatActivity(), PoseAdapter.OnPoseListener{
         supportActionBar?.setIcon(R.mipmap.tjmedia)
 
         //Add basic poses
-//        supportFragmentManager
-//            .beginTransaction()
-//            .replace(R.id.main_fragment, couplesFragment, couplesFragment::class.java.simpleName)
-//            .commit()
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.main_fragment, couplesFragment, couplesFragment::class.java.simpleName)
+            .commit()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNavigationView.setOnNavigationItemSelectedListener(object :
             BottomNavigationView.OnNavigationItemSelectedListener {
             override fun onNavigationItemSelected(item: MenuItem): Boolean {
-                var activeFragment: Fragment
+                val activeFragment: Fragment
                 when (item.itemId) {
                     R.id.action_couple ->
                         activeFragment = couplesFragment
                     R.id.action_detail ->
-                        // do something here
-                        return true
+                        activeFragment = otherFragment
                     R.id.action_gallery -> {
                        activeFragment = galleryFragment
                     }

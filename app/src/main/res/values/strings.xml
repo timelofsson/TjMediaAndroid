@@ -16,4 +16,10 @@
     <string name="couple_poses">Couple Poses</string>
     <string name="detail_shots">Details</string>
     <string name="gallery">Gallery</string>
+    <string name="hipster_pose_title">Hipster Pose</string>
+    <string name="hipster_pose_text">Couples facing forward and holding hands\nSome variations:\nLet the couple stand ca 1m apart\nTurn towards each other</string>
+    <string name="intimate_pose_title">Intimate Pose</string>
+    <string name="intimate_pose_text">Face eachother\nOk to close the eyes\nWorks with both landskapes and close up shots</string>
+    <string name="twirl_pose_title">The Twirl</string>
+    <string name="twirl_pose_text">Ask the groom to just twirl the bride around\nMakes it easy for real emotions\nImportant to keep shooting after because a lot of reaction can happen there.</string>
 </resources>
